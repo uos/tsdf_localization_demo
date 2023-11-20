@@ -1,9 +1,8 @@
 # tsdf_localization_demo
 
-Example usage of the [tsdf_localization package.
+Example usage of the [tsdf_localization](https://github.com/uos/tsdf_localization_demo.git) package.
 
 PUT GIF HERE
-
 
 ## Build DEMO
 Requirements:
@@ -16,6 +15,13 @@ $ git clone https://github.com/uos/tsdf_localization_demo.git
 ```
 
 Build your workspace.
+
+## Map preparation
+Go to `tsdf_localization_demo/maps`-folder and enter
+
+```console
+$ bunzip2 avz_tsdf.h5.bz2
+```
 
 ## Run TSDF MCL
 
