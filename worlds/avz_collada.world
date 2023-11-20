@@ -66,7 +66,7 @@
         <collision name="avz_map_collision">
           <geometry>
             <mesh>
-              <uri>file://avz_neu_no-roof_no-floor_no-lamps_simplified.stl</uri>
+              <uri>./avz_no_roof.stl</uri>
               <scale>1.0 1.0 1.0</scale>
             </mesh>
           </geometry>
@@ -75,7 +75,7 @@
           <cast_shadows>false</cast_shadows>
           <geometry>
             <mesh>
-              <uri>file://avz_neu_no-roof_no-floor_no-lamps_simplified.stl</uri>
+              <uri>./avz_no_roof.stl</uri>
               <scale>1.0 1.0 1.0</scale>
             </mesh>
           </geometry>
