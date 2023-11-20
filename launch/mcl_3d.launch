@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+<arg name="gui" default="true"/>
+<arg name="map" default="$(find tsdf_localization_demo)/maps/avz_tsdf.h5" />
+
+<node name="mcl_3d" type="mcl_3d" pkg="tsdf_localization" output="screen">
+    <param name="map_file" type="str" value="$(arg map)"/>
+    <rosparam command="load" file="$(find tsdf_localization_demo)/config/mcl_3d.yaml" />
+</node>
+
+<group if="$(arg gui)">
+    <node name="tsdf_vis" type="tsdf_vis" pkg="tsdf_localization" output="screen" args="$(arg map)">
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find tsdf_localization_demo)/rviz/mcl_3d.rviz">
+    </node>
+</group>
+
+</launch>

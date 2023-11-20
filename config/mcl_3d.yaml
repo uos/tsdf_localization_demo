@@ -1,0 +1,15 @@
+use_best_pose: False
+per_point: False
+init_global: True
+ground_truth_eval: False
+use_hilti_gt: False
+print_runtime_stats: False
+sigma: 0.5 # 0.000001
+a_hit: 0.8
+a_rand: 0.2
+a_max: 0.0
+range_max: 1000.0
+use_imu: False
+use_gt_odom: False
+use_os: False
+ignore_motion: False
