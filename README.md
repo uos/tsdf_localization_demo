@@ -2,11 +2,13 @@
 
 Example usage of the [tsdf_localization](https://github.com/uos/tsdf_localization_demo.git) package.
 
-PUT GIF HERE
+## Compilation
 
-## Build DEMO
 Requirements:
-- tsdf_localization
+- ROS-noetic
+- [tsdf_localization](https://github.com/uos/tsdf_localization)
+- gazebo
+- robot_pose_ekf
 
 Clone this repository into your ROS(-noetic) workspace:
 
@@ -48,16 +50,14 @@ The launch file starts
     - RViz
     - tsdf_vis: h5 -> marker
 
+It initially starts with an equally distributed belief state. Steer the robot until the particles are converging. Similar to [amcl](http://wiki.ros.org/amcl), you can initialize TSDF-MCL during runtime either by guessing the initial pose using RViz:
 
-The RViz window should look like this:
+![RViz Initial Pose Guess](media/tsdf_loc_pose_guess.gif)
 
-TODO: image of RViz
-
-
-It initially starts with an equally distributed belief state. Steer the robot until the particles are converging. Similar to [amcl](http://wiki.ros.org/amcl), you can initialize TSDF-MCL during runtime either by guessing the initial pose using RViz, or by calling the service `/global_localization`:
+or by calling the service `/global_localization`:
 
 ```console
 rosservice call /global_localization
 ```
 
-![Demo GIF](./media/TSDFLoc.gif)
+![Demo GIF](media/tsdf_loc_teaser.gif)
