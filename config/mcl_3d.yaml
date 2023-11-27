@@ -1,3 +1,6 @@
+robot_frame: base_footprint
+map_frame: map
+odom_frame: odom_combined
 use_best_pose: False
 per_point: False
 init_global: True

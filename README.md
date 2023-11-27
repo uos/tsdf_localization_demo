@@ -54,4 +54,10 @@ The RViz window should look like this:
 TODO: image of RViz
 
 
-It initially starts with an equally distributed belief state. Steer the robot until the particles are converging. Similar to [amcl](http://wiki.ros.org/amcl), you can initialize TSDF-MCL during runtime either by guessing the initial pose using RViz, or by calling the service `/global_localization` (TODO: is this implemented?). 
+It initially starts with an equally distributed belief state. Steer the robot until the particles are converging. Similar to [amcl](http://wiki.ros.org/amcl), you can initialize TSDF-MCL during runtime either by guessing the initial pose using RViz, or by calling the service `/global_localization`:
+
+```console
+rosservice call /global_localization
+```
+
+![Demo GIF](./media/TSDFLoc.gif)

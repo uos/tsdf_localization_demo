@@ -7,6 +7,10 @@
 <node name="mcl_3d" type="mcl_3d" pkg="tsdf_localization" output="screen">
     <param name="map_file" type="str" value="$(arg map)"/>
     <rosparam command="load" file="$(find tsdf_localization_demo)/config/mcl_3d.yaml" />
+
+    <!-- Topics: -->
+    <remap from="cloud" to="velodyne_points" />
+    <remap from="odom" to="odom" />
 </node>
 
 <group if="$(arg gui)">

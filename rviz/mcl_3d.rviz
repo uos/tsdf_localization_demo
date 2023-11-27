@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Grid1
+        - /PoseArray1
         - /Marker1/Namespaces1
       Splitter Ratio: 0.6063218116760254
     Tree Height: 741
@@ -27,7 +27,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: Velodyne
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -89,7 +89,7 @@ Visualization Manager:
       Channel Name: intensity
       Class: rviz/PointCloud2
       Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color Transformer: FlatColor
       Decay Time: 0
       Enabled: true
       Invert Rainbow: false
@@ -99,7 +99,7 @@ Visualization Manager:
       Position Transformer: XYZ
       Queue Size: 20
       Selectable: true
-      Size (Pixels): 3
+      Size (Pixels): 10
       Size (m): 0.009999999776482582
       Style: Points
       Topic: /velodyne_points
@@ -122,16 +122,6 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
         base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        em_body:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        em_button:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -225,7 +215,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 27.53237533569336
+      Distance: 27.983930587768555
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -233,17 +223,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 9.883573532104492
-        Y: -0.6219549179077148
-        Z: 5.409558525570901e-07
-      Focal Shape Fixed Size: true
+        X: -3.1045260429382324
+        Y: 1.820622444152832
+        Z: -2.384185791015625e-07
+      Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5597963333129883
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 6.266765117645264
+      Yaw: 3.135408878326416
     Saved: ~
 Window Geometry:
   Displays:
